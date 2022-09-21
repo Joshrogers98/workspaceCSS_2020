@@ -87,3 +87,77 @@ footer{
     left: 30%;
     bottom: 0px;
 }
+
+/*z-index value (highest value is front)*/
+
+section.intro{
+    width: 60%;
+}
+
+div.explanation{
+    float: left;
+    width: 40%;
+    padding: 5%;
+}
+
+div.participation{
+    top: 50px;
+    margin:47%;
+    width: 60%;
+}
+
+div.benefits{
+    top: 5px;
+    float: left;
+    width: 20%;
+    padding: 5%;
+}
+
+div.requirements{
+    margin: 35%;
+    width: 70%;
+}
+
+/*When using custom font, always use a default font at the end
+of the list of used fonts, so it can default to that if
+custom doesnt display (sans-serif)*/
+
+div.requirements{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/*local font*/
+@font-face {
+    font-family: 'myfont';
+    src: url('../fonts/chunkfive.woff');
+}
+
+header h1{
+    font-family: 'myfont';
+    text-indent: -9999px;
+    background-image: url(../img/zengarden.gif);
+}
+
+h2{
+    font-size: 24px;
+}
+
+h3{
+    font-size: 2.25em;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-transform: uppercase;
+}
+
+a{
+    text-decoration: none;
+}
+
+div.benefits{
+    /*uses link in index.html to google fonts site*/
+    font-family: 'Shadows Into Light',sans-serif;
+}
+div.requirements{
+    font-family: 'Bungee Spice',sans-serif;
+}
